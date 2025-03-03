@@ -1,0 +1,16 @@
+.header { /*ヘッダーは背景の色を決めるのにいる。*/
+    background: #000;
+}
+
+.header__inner {
+    margin: 0 auto; /*ブロック要素で、中央揃えにする*/
+    padding: 20px 15px;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 24px; /*ここを指定すると、上でpaddingを指定している関係で、ヘッダーの黒い部分がちょっと大きくなる*/
+}

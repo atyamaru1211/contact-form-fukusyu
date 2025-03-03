@@ -1,0 +1,79 @@
+.contact-form__content {
+    margin: 0 auto; /*ブロック要素で中央揃え*/
+    padding: 30px 15px; /*全体的に周りに余白をつくるため記載*/
+    max-width: 1230px; /*つけてもなくても変わらん気はする*/
+}
+
+.contact-form__heading {
+    margin-bottom: 40px; /*題名と下のやつとのスペースを空ける*/
+    text-align: center;/*上では中央揃えにはしない。まあしてもよさそうな気はする*/
+}
+
+.form {
+    margin: 0 auto; /*全体の配置を中央揃え*/
+    width: 70%; /*全体の大きさを設定*/
+    text-align: center; /*中の要素を中央揃え　あってもなくてもよくわからないが*/
+}
+
+.form__group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; /*上で70%、center設定してるので、こっちは上下との間隔の設定を。*/
+}
+
+/*.form__group-title { これがあると、テキストが左揃えにならない！
+    margin: 10px auto;
+}
+
+.form__label--item {　なくていい
+    font-weight: bold;
+    text-align: left;
+}*/
+
+.form__label--required { /*ここ実は、灰色の薄い枠がある、、*/
+    margin-left: 5px; /* margin 0 5pxだと右側にも謎の余白できるから(あまり気にならないけど。)*/
+    padding: 4px 6px;
+    border-radius: 3px;
+    background: #fafafa;
+    color: #aaa
+}
+
+/*.form__group-content { これもいらない。text inputとtext textareaがあって一概に全部くくれないから。
+}*/
+
+.form__error { /*よくわからん*/
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text input, .form__input--textarea textarea { /*これそれぞれ、inputとtextareaを足さないと、実際の枠のところに修飾されない*/
+    padding: 10px; /*文字の大きさ変えず、枠の大きさが変わる*/
+    width: 600px; /*まあまあ大きく。*/
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none; /*よくわからない*/
+}
+
+.form__input--text input { /*それぞれ、縦の大きさが違うから。*/
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    width: 30%;
+    background: #000;
+    color: #fff;
+    padding: 10px;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
